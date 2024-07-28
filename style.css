@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --blue: #4036A9;
+    --black: #111729;
+    --grey: #CDD5E0;
+    --cream-white: #F8FAFC;
+    --white: #FFF; 
+    --font: "Be Vietnam Pro"
+}
+
+
+body {
+    background-image: url(assets/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding: 25px 72px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1rem;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 4rem;
+    max-width: 15ch;
+}
+
+
+
+h1, p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    max-width: 30ch;
+    font-size: 2rem;
+    margin-top: 0.8em;
+}
+
+/* FORM */
+
+label, input, select, button, textarea {
+    display: block;
+    width: 100%;
+    font-family: var(--font);
+    
+}
+
+label {
+    font-size: 0.875rem;
+    margin: 0.2em 0;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: var(--grey);
+}
+
+input, select {
+    margin-top: 0.5em;
+}
+
+input, select {
+    height: 60px;
+}
+
+select {
+    margin-bottom: 0.5em;
+}
+
+button {
+    font-size: 1.25rem;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+input, button, select, textarea, option {
+    padding: 1.25em;
+}
+
+
+input, button, select, textarea, button {
+    border-radius: 15px ;
+    border: none;
+}
+
+button {
+    font-weight: bold;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+select, textarea {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+input:focus , select:focus, textarea:focus {
+    outline: 3px solid var(--grey);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+}
+
+form {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(248, 250, 252, 0.2);
+    margin-top: 80px;
+    margin-bottom: 1em;
+    border-radius: 24px;
+
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+
+   form {
+        min-width: 100%;
+        margin: 80px 0 1em 0;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+
+    body {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 1em 1em;
+    }
+}
+
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
